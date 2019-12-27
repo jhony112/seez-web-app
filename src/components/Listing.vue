@@ -26,9 +26,9 @@
 
                     </div>
                     <div class="card__footer">
-                        <div class="flex-sb stats">
-                            <div class="price text-sm"><i class="fas fa-gas-pump"></i> {{listing.fuel_type}}</div>
-                            <div class="metric text-sm  "><i class="fas fa-car"></i> {{carModelMileage}}</div>
+                        <div class=" stats flex-r">
+                            <!--<div class="price text-sm"><i class="fas fa-gas-pump"></i> {{listing.fuel_type}}</div>-->
+                            <div class="metric text-sm text-right  "><i class="fas fa-car"></i> {{carModelMileage}}</div>
                         </div>
 
                         <div class="text-sm dealer" v-if="listing.is_certified"> Certified Dealer <i class="fas fa-check-circle"></i> </div>
