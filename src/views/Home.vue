@@ -21,15 +21,15 @@
                             </div>
 
                             <!--<div class="col-12 col-md-5 offset-md-1">-->
-                                <!--<div class="search__box card">-->
-                                    <!--<div class="row">-->
-                                        <!--<div class="col-12">-->
-                                            <!--<select class="custom-select custom-select-sm">-->
+                            <!--<div class="search__box card">-->
+                            <!--<div class="row">-->
+                            <!--<div class="col-12">-->
+                            <!--<select class="custom-select custom-select-sm">-->
 
-                                        <!--</div>-->
-                                    <!--</div>-->
+                            <!--</div>-->
+                            <!--</div>-->
 
-                                <!--</div>-->
+                            <!--</div>-->
                             <!--</div>-->
                         </div>
                     </div>
@@ -101,7 +101,7 @@
         },
         data() {
             return {
-                loading: false,
+                loading: true,
                 mock: [
                     {
                         "active": true,
@@ -1845,7 +1845,13 @@
 
         },
         mounted() {
+            let vm = this;
+            //simulate loading after 2 secs
+            setTimeout(function () {
+                vm.loading = false;
+            }, 200-)
             this.$store.dispatch('setListing', this.mock)
+
         }
 
     }
@@ -1861,7 +1867,7 @@
         position: relative;
         background-image: url("../assets/images/home_search.jpg");
 
-        .overlay{
+        .overlay {
             position: absolute;
             width: 100%;
             height: 100%;
