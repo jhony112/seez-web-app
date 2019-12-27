@@ -204,7 +204,7 @@
             }
             // console.log(listing);
 
-            console.log(this.entry)
+           // console.log(this.entry)
         }
     }
 </script>
