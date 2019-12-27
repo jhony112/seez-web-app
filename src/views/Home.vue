@@ -1849,7 +1849,7 @@
             //simulate loading after 2 secs
             setTimeout(function () {
                 vm.loading = false;
-            }, 200-)
+            }, 2000)
             this.$store.dispatch('setListing', this.mock)
 
         }
